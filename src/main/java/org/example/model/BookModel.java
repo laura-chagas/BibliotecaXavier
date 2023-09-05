@@ -6,7 +6,6 @@ public class BookModel {
     private String bookTitle;
     private String descriptionBook;
     private String genreBook;
-    private boolean bookStatus;
 
     private int authorId;
 
@@ -50,11 +49,4 @@ public class BookModel {
         this.genreBook = genreBook;
     }
 
-    public boolean isBookStatus() {
-        return bookStatus;
-    }
-
-    public void setBookStatus(boolean bookStatus) {
-        this.bookStatus = bookStatus;
-    }
 }

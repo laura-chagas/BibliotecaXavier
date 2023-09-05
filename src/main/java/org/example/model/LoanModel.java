@@ -5,9 +5,6 @@ import java.time.LocalDate;
 public class LoanModel {
 
     private int loanId;
-    private LocalDate withdrawalDate;
-    private LocalDate returnDate;
-    private boolean loanStatus;
 
     private int bookId;
 
@@ -37,27 +34,5 @@ public class LoanModel {
         this.loanId = loanId;
     }
 
-    public LocalDate getWithdrawalDate() {
-        return withdrawalDate;
-    }
 
-    public void setWithdrawalDate(LocalDate withdrawalDate) {
-        this.withdrawalDate = withdrawalDate;
-    }
-
-    public LocalDate getReturnDate() {
-        return returnDate;
-    }
-
-    public void setReturnDate(LocalDate returnDate) {
-        this.returnDate = returnDate;
-    }
-
-    public boolean isLoanStatus() {
-        return loanStatus;
-    }
-
-    public void setLoanStatus(boolean loanStatus) {
-        this.loanStatus = loanStatus;
-    }
 }

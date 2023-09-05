@@ -7,15 +7,6 @@ public class UserModel {
     private String userCpf;
     private String userEmail;
     private String userPassword;
-    private int loanId;
-
-    public int getLoanId() {
-        return loanId;
-    }
-
-    public void setLoanId(int loanId) {
-        this.loanId = loanId;
-    }
 
     public int getUserId() {
         return userId;
