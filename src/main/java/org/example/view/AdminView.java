@@ -60,6 +60,7 @@ public class AdminView {
     public void registerAuthor() {
         System.out.println("Informe o nome do Autor: ");
         String name = scan.next();
+        scan.nextLine();
         System.out.println("Informe o CPF do Autor: ");
         String cpf = scan.next();
         System.out.println("Informe o e-mail do Autor: ");
@@ -70,8 +71,10 @@ public class AdminView {
     public void bookRegister() {
         System.out.println("Qual o título do livro?:");
         String title = scan.next();
+        scan.nextLine();
         System.out.println("Qual a descrição?: ");
         String description = scan.next();
+        scan.nextLine();
         System.out.println("Qual o gênero?: ");
         String genrer = scan.next();
         adminController.registerBook(title, description, genrer);
@@ -106,7 +109,7 @@ public class AdminView {
     public void registerNewLoan() {
         System.out.println("Digite o id do livro que deseja pegar emprestado:");
         int id_livro = scan.nextInt();
-        System.out.println("Digite o seu id:");
+        System.out.println("Digite o id(leitor):");
         int id_leitor = scan.nextInt();
         loanController.registerNewLoan(id_livro, id_leitor);
     }

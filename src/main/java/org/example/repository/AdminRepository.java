@@ -111,7 +111,7 @@ public class AdminRepository {
 
     public boolean associateAuthorId(int idAuthor, int idBook) {
         try {
-            String SQL = "UPDATE tblivro SET id_Autor=? WHERE id_Livro=?";
+            String SQL = "UPDATE tbLivro SET idAutor=? WHERE id_Livro=?";
             preparedStatement = conn.prepareStatement(SQL);
             preparedStatement.setInt(1, idAuthor);
             preparedStatement.setInt(2, idBook);
@@ -125,7 +125,7 @@ public class AdminRepository {
 
     public boolean associateBookId(int idBook, int idAuthor) {
         try {
-            String SQL = "UPDATE tbAutor SET id_Livro=? WHERE id_Autor=?";
+            String SQL = "UPDATE tbAutor SET idLivro=? WHERE id_Autor=?";
             preparedStatement = conn.prepareStatement(SQL);
             preparedStatement.setInt(1, idBook);
             preparedStatement.setInt(2, idAuthor);
